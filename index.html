@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doctrinoo Advisory | Conseil, data et développement économique</title>
+    <meta
+      name="description"
+      content="Doctrinoo Advisory accompagne les entreprises, institutions, investisseurs et entrepreneurs en Afrique centrale grâce au conseil stratégique, à la data intelligence et au développement économique terrain."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#top" class="brand" aria-label="Doctrinoo Advisory">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 64 64">
+              <path d="M32 8 A24 24 0 0 1 32 56" fill="currentColor"/>
+              <circle cx="32" cy="8" r="5" fill="var(--gold)"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-name">Doctrinoo</span>
+            <span class="brand-subtitle">Advisory</span>
+          </span>
+        </a>
+
+        <div class="nav-links" aria-label="Navigation principale">
+          <a href="#offres">Offres</a>
+          <a href="#lab">Microbusiness Lab</a>
+          <a href="#methode">Méthode</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="#contact">Cadrer une mission</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="pill reveal-item" style="animation-delay:0ms;">Conseil, data et terrain</p>
+            <h1 class="reveal-item" style="animation-delay:90ms;">Structurer l'économie réelle en Afrique centrale.</h1>
+            <p class="hero-text reveal-item" style="animation-delay:180ms;">
+              Doctrinoo Advisory accompagne les entreprises, institutions,
+              investisseurs et entrepreneurs dans la transformation des
+              opportunités locales en projets mesurables, finançables et
+              durables.
+            </p>
+            <div class="hero-actions reveal-item" style="animation-delay:270ms;">
+              <a class="button button-primary" href="#offres">Découvrir nos offres</a>
+              <a class="button button-secondary" href="#lab">Voir le Microbusiness Lab</a>
+            </div>
+          </div>
+
+          <div class="hero-map reveal-item" style="animation-delay:360ms;">
+            <div id="africa-map" class="map-card" aria-label="Carte de l'Afrique centrale"></div>
+            <p class="map-caption">Zone d'intervention prioritaire — pays de la zone CEMAC</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band">
+        <div class="container proof-grid">
+          <article>
+            <h3>Équipe pluridisciplinaire</h3>
+            <p>Statisticiens, data analysts, économistes, financiers et profils terrain.</p>
+          </article>
+          <article>
+            <h3>Lecture institutionnelle</h3>
+            <p>Cartographie des acteurs, stratégie de partenariat et compréhension des écosystèmes locaux.</p>
+          </article>
+          <article>
+            <h3>Exécution mesurable</h3>
+            <p>Indicateurs, dashboards, reporting et décisions documentées.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="offres" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Nos offres</p>
+            <h2>Un cabinet conçu pour les décisions difficiles.</h2>
+            <p class="section-text">
+              Nous intervenons lorsque le client doit investir, entrer sur un
+              marché, piloter un programme, structurer une PME ou comprendre un
+              terrain économique peu documenté.
+            </p>
+          </div>
+
+          <div class="offer-grid">
+            <article class="offer-card">
+              <h3>Conseil stratégique Afrique</h3>
+              <p>
+                Études de marché, stratégie d'implantation, cartographie des
+                acteurs, analyse concurrentielle et feuille de route opérationnelle.
+              </p>
+            </article>
+            <article class="offer-card">
+              <h3>Data & intelligence économique</h3>
+              <p>
+                Collecte terrain, scoring, segmentation, tableaux de bord,
+                mesure d'impact et reporting pour piloter avec des preuves.
+              </p>
+            </article>
+            <article class="offer-card">
+              <h3>Structuration financière</h3>
+              <p>
+                Business plans, modèles financiers, préparation bancaire ou
+                investisseur, analyse de rentabilité et trajectoire de croissance.
+              </p>
+            </article>
+            <article class="offer-card">
+              <h3>Microbusiness Lab</h3>
+              <p>
+                Programme pilote pour identifier, structurer et accompagner des
+                microentrepreneurs informels vers plus de capital et d'autonomie.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="lab-section">
+        <div class="container">
+          <aside class="lab-panel lab-summary" aria-label="Résumé Microbusiness Lab">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Programme pilote</p>
+                <h2>Microbusiness Lab</h2>
+              </div>
+              <span>18 mois</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <strong>250k</strong>
+                <p>FCFA ticket cible initial</p>
+              </div>
+              <div class="metric">
+                <strong>1M</strong>
+                <p>FCFA capital visé pour les meilleurs profils</p>
+              </div>
+              <div class="metric">
+                <strong>100</strong>
+                <p>points de scoring opérationnel</p>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <p>familles d'indicateurs suivies</p>
+              </div>
+            </div>
+
+            <div class="doctrine">
+              <h3>Doctrine d'action</h3>
+              <p>
+                Pas de financement sans diagnostic. Pas d'augmentation sans
+                preuve. Pas de stratégie sans données terrain.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div class="container split">
+          <div>
+            <p class="eyebrow gold">Doctrinoo Microbusiness Lab</p>
+            <h2>Un laboratoire pour transformer l'informel en actif économique mesurable.</h2>
+            <p class="section-text light">
+              Le Lab identifie des activités réelles, mesure leur potentiel,
+              accompagne la gestion, injecte progressivement du capital utile et
+              documente les trajectoires de croissance.
+            </p>
+            <div class="tag-grid">
+              <span>Diagnostic terrain</span>
+              <span>Scoring initial</span>
+              <span>Suivi hebdomadaire</span>
+              <span>Décision par preuve</span>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-head">
+              <strong>Grille de progression</strong>
+              <span>Capital</span>
+            </div>
+            <div class="progress-row">
+              <div><strong>Préparation</strong><span>0 FCFA</span></div>
+              <i data-width="12"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong>Ticket test</strong><span>25k - 75k</span></div>
+              <i data-width="24"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong>Croissance</strong><span>100k - 250k</span></div>
+              <i data-width="46"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong>Accélération</strong><span>300k - 500k</span></div>
+              <i data-width="68"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong>Capital structurant</strong><span>500k - 1M</span></div>
+              <i data-width="100"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="methode" class="section">
+        <div class="container split method-split">
+          <div>
+            <p class="eyebrow">Méthode</p>
+            <h2>De la réalité terrain à la décision de direction.</h2>
+          </div>
+          <div class="method-list">
+            <div><span>01</span><p>Cadrer le besoin et les contraintes</p></div>
+            <div><span>02</span><p>Observer le terrain et collecter les données</p></div>
+            <div><span>03</span><p>Structurer les modèles économiques</p></div>
+            <div><span>04</span><p>Scorer les risques et les opportunités</p></div>
+            <div><span>05</span><p>Piloter l'exécution avec des indicateurs</p></div>
+            <div><span>06</span><p>Mesurer les résultats et préparer l'échelle</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients-section">
+        <div class="container split">
+          <div class="client-card">
+            <p class="eyebrow">Clients</p>
+            <h2>Pour ceux qui doivent décider avec peu de visibilité.</h2>
+            <div class="chips">
+              <span>PME locales</span>
+              <span>Institutions publiques</span>
+              <span>ONG et bailleurs</span>
+              <span>Fonds d'impact</span>
+              <span>Diaspora africaine</span>
+              <span>Entreprises internationales</span>
+            </div>
+          </div>
+
+          <div class="indicator-card">
+            <p class="eyebrow gold">Indicateurs</p>
+            <h2>Une lecture économique pilotée par la donnée.</h2>
+            <div class="indicator-grid">
+              <span>marge</span>
+              <span>stock</span>
+              <span>trésorerie</span>
+              <span>risque</span>
+              <span>impact</span>
+              <span>croissance</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Missions types</p>
+              <h2>Des livrables prêts pour décider, convaincre et exécuter.</h2>
+            </div>
+            <p>
+              Chaque mission est pensée pour produire une décision utile, pas un
+              rapport qui dort dans un dossier.
+            </p>
+          </div>
+
+          <div class="mission-table">
+            <div>
+              <h3>Diagnostic stratégique</h3>
+              <p>Note dirigeant, matrice de risques, feuille de route 90 jours</p>
+            </div>
+            <div>
+              <h3>Étude de marché</h3>
+              <p>Rapport terrain, cartographie acteurs, analyse prix et distribution</p>
+            </div>
+            <div>
+              <h3>Business plan</h3>
+              <p>Modèle financier, pitch deck, dossier investisseur ou bancaire</p>
+            </div>
+            <div>
+              <h3>Suivi-évaluation</h3>
+              <p>Référentiel KPI, dashboard, rapport d'impact et recommandations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-card">
+            <div>
+              <p class="eyebrow gold">Prochaine étape</p>
+              <h2>Cadrer une mission, tester un marché ou structurer un programme.</h2>
+              <p>
+                Une première réunion de cadrage permet de clarifier le besoin,
+                le périmètre, les livrables et la méthodologie adaptée.
+              </p>
+            </div>
+            <a href="mailto:contact@doctrinoo.com">contact@doctrinoo.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Doctrinoo Advisory. Tous droits réservés.</p>
+        <p>Cabinet de conseil, data et développement économique — Cameroun.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var css = document.createElement("style");
+        css.textContent =
+          "@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}" +
+          ".reveal-item{animation:fadeUp 700ms ease both}" +
+          ".reveal{opacity:0;transform:translateY(18px);transition:opacity 700ms ease,transform 700ms ease}" +
+          ".reveal.is-visible{opacity:1;transform:none}" +
+          ".offer-card,.button,.nav-cta,.chips span,.mission-table > div{transition:transform 220ms ease,border-color 220ms ease,background 220ms ease}" +
+          ".offer-card:hover{transform:translateY(-4px)}" +
+          ".button:hover,.nav-cta:hover{transform:translateY(-2px)}" +
+          ".mission-table > div:hover{background:rgba(23,60,44,0.04)}" +
+          ".progress-row i{transition:width 900ms cubic-bezier(.16,1,.3,1)}";
+        document.head.appendChild(css);
+
+        var revealTargets = document.querySelectorAll(
+          ".proof-grid article, .offer-card, .progress-card, .lab-summary, .method-list > div, .client-card, .indicator-card, .mission-table > div, .contact-card"
+        );
+        revealTargets.forEach(function (el) { el.classList.add("reveal"); });
+
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                if (entry.target.classList.contains("progress-card")) {
+                  entry.target.querySelectorAll("i[data-width]").forEach(function (bar) {
+                    bar.style.width = bar.getAttribute("data-width") + "%";
+                  });
+                }
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        revealTargets.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
+    <script>
+      (function () {
+        var CEMAC = ["cameroon", "gabon", "congo", "chad", "central african rep.", "central african republic", "eq. guinea", "equatorial guinea"];
+        function isCemac(name) {
+          var n = (name || "").toLowerCase().trim();
+          return CEMAC.indexOf(n) !== -1;
+        }
+        var container = document.getElementById("africa-map");
+        var width = container.clientWidth || 520;
+        var height = 560;
+        var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + width + " " + height).attr("width", "100%").attr("height", "100%");
+
+        d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json").then(function (topology) {
+          var countries = topojson.feature(topology, topology.objects.countries);
+          var africa = {
+            type: "FeatureCollection",
+            features: countries.features.filter(function (f) {
+              var c = d3.geoCentroid(f);
+              return c[0] >= -20 && c[0] <= 55 && c[1] >= -36 && c[1] <= 38;
+            })
+          };
+          var projection = d3.geoMercator().fitSize([width, height], africa);
+          var path = d3.geoPath(projection);
+
+          svg.selectAll("path")
+            .data(africa.features)
+            .join("path")
+            .attr("d", path)
+            .attr("fill", function (d) { return isCemac(d.properties.name) ? "#c99d43" : "rgba(255,255,255,0.9)"; })
+            .attr("stroke", "#173c2c")
+            .attr("stroke-width", 0.6);
+        });
+      })();
+    </script>
+  </body>
+</html>
