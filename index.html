@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-en="Doctrinoo Advisory | Advisory, data and economic development">Doctrinoo Advisory | Conseil, data et développement économique</title>
+    <meta
+      name="description"
+      data-en="Doctrinoo Advisory helps companies, institutions, investors and entrepreneurs in Central Africa through strategic advisory, data intelligence and on-the-ground economic development."
+      content="Doctrinoo Advisory accompagne les entreprises, institutions, investisseurs et entrepreneurs en Afrique centrale grâce au conseil stratégique, à la data intelligence et au développement économique terrain."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a href="#top" class="brand" aria-label="Doctrinoo Advisory">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 64 64">
+              <path d="M32 8 A24 24 0 0 1 32 56" fill="currentColor"/>
+              <circle cx="32" cy="8" r="5" fill="var(--gold)"/>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-name">Doctrinoo</span>
+            <span class="brand-subtitle">Advisory</span>
+          </span>
+        </a>
+
+        <div class="nav-links" aria-label="Navigation principale">
+          <a href="#offres" data-en="Services">Offres</a>
+          <a href="#lab">Microbusiness Lab</a>
+          <a href="#methode" data-en="Method">Méthode</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="lang-switch" aria-label="Langue">
+          <button type="button" class="lang-btn is-active" data-lang="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a class="nav-cta" href="#contact" data-en="Scope a mission">Cadrer une mission</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="top" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="pill reveal-item" style="animation-delay:0ms;" data-en="Advisory, data and fieldwork">Conseil, data et terrain</p>
+            <h1 class="reveal-item" style="animation-delay:90ms;" data-en="Structuring the real economy in Central Africa.">Structurer l'économie réelle en Afrique centrale.</h1>
+            <p class="hero-text reveal-item" style="animation-delay:180ms;" data-en="Doctrinoo Advisory helps companies, institutions, investors and entrepreneurs turn local opportunities into measurable, fundable and sustainable projects.">
+              Doctrinoo Advisory accompagne les entreprises, institutions,
+              investisseurs et entrepreneurs dans la transformation des
+              opportunités locales en projets mesurables, finançables et
+              durables.
+            </p>
+            <div class="hero-actions reveal-item" style="animation-delay:270ms;">
+              <a class="button button-primary" href="#offres" data-en="Explore our services">Découvrir nos offres</a>
+              <a class="button button-secondary" href="#lab" data-en="See the Microbusiness Lab">Voir le Microbusiness Lab</a>
+            </div>
+          </div>
+
+          <div class="hero-map reveal-item" style="animation-delay:360ms;">
+            <div id="africa-map" class="map-card" aria-label="Carte de l'Afrique centrale"></div>
+            <p class="map-caption" data-en="Priority operating area — CEMAC zone countries">Zone d'intervention prioritaire — pays de la zone CEMAC</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band">
+        <div class="container proof-grid">
+          <article>
+            <h3 data-en="Multidisciplinary team">Équipe pluridisciplinaire</h3>
+            <p data-en="Statisticians, data analysts, economists, finance experts and field staff.">Statisticiens, data analysts, économistes, financiers et profils terrain.</p>
+          </article>
+          <article>
+            <h3 data-en="Institutional insight">Lecture institutionnelle</h3>
+            <p data-en="Stakeholder mapping, partnership strategy and understanding of local ecosystems.">Cartographie des acteurs, stratégie de partenariat et compréhension des écosystèmes locaux.</p>
+          </article>
+          <article>
+            <h3 data-en="Measurable execution">Exécution mesurable</h3>
+            <p data-en="Indicators, dashboards, reporting and documented decisions.">Indicateurs, dashboards, reporting et décisions documentées.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="offres" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow" data-en="Our services">Nos offres</p>
+            <h2 data-en="A firm built for hard decisions.">Un cabinet conçu pour les décisions difficiles.</h2>
+            <p class="section-text" data-en="We step in when a client needs to invest, enter a market, run a program, structure an SME, or understand a poorly documented economic environment.">
+              Nous intervenons lorsque le client doit investir, entrer sur un
+              marché, piloter un programme, structurer une PME ou comprendre un
+              terrain économique peu documenté.
+            </p>
+          </div>
+
+          <div class="offer-grid">
+            <article class="offer-card" tabindex="0" role="button" aria-expanded="false">
+              <h3 data-en="Africa Strategic Advisory">Conseil stratégique Afrique</h3>
+              <p data-en="Market studies, market-entry strategy, stakeholder mapping, competitive analysis and operational roadmaps.">
+                Études de marché, stratégie d'implantation, cartographie des
+                acteurs, analyse concurrentielle et feuille de route opérationnelle.
+              </p>
+              <div class="offer-detail">
+                <ul>
+                  <li data-en="Market study &amp; stakeholder mapping">Étude de marché &amp; cartographie des acteurs</li>
+                  <li data-en="Market-entry strategy and launch plan">Stratégie d'implantation et plan de lancement</li>
+                  <li data-en="Business plan and investor file">Business plan et dossier investisseur</li>
+                </ul>
+              </div>
+              <span class="offer-toggle" data-en="Learn more">En savoir plus</span>
+            </article>
+            <article class="offer-card" tabindex="0" role="button" aria-expanded="false">
+              <h3 data-en="Data &amp; economic intelligence">Data &amp; intelligence économique</h3>
+              <p data-en="Field data collection, scoring, segmentation, dashboards, impact measurement and reporting to steer by evidence.">
+                Collecte terrain, scoring, segmentation, tableaux de bord,
+                mesure d'impact et reporting pour piloter avec des preuves.
+              </p>
+              <div class="offer-detail">
+                <ul>
+                  <li data-en="Field surveys and structured data collection">Enquêtes terrain et collecte structurée</li>
+                  <li data-en="Alternative scoring adapted to the informal economy">Scoring alternatif adapté à l'informel</li>
+                  <li data-en="Dashboards and impact measurement">Dashboards et mesure d'impact</li>
+                </ul>
+              </div>
+              <span class="offer-toggle" data-en="Learn more">En savoir plus</span>
+            </article>
+            <article class="offer-card" tabindex="0" role="button" aria-expanded="false">
+              <h3 data-en="Financial structuring">Structuration financière</h3>
+              <p data-en="Business plans, financial models, bank or investor readiness, profitability analysis and growth trajectory.">
+                Business plans, modèles financiers, préparation bancaire ou
+                investisseur, analyse de rentabilité et trajectoire de croissance.
+              </p>
+              <div class="offer-detail">
+                <ul>
+                  <li data-en="Financial diagnostic and cash-flow plan">Diagnostic financier et plan de trésorerie</li>
+                  <li data-en="Fundraising readiness">Préparation à la levée de fonds</li>
+                  <li data-en="Partnership structuring">Structuration de partenariat</li>
+                </ul>
+              </div>
+              <span class="offer-toggle" data-en="Learn more">En savoir plus</span>
+            </article>
+            <article class="offer-card" tabindex="0" role="button" aria-expanded="false">
+              <h3>Microbusiness Lab</h3>
+              <p data-en="A pilot program to identify, structure and support informal microentrepreneurs toward more capital and autonomy.">
+                Programme pilote pour identifier, structurer et accompagner des
+                microentrepreneurs informels vers plus de capital et d'autonomie.
+              </p>
+              <div class="offer-detail">
+                <ul>
+                  <li data-en="Diagnostic and initial scoring">Diagnostic et scoring initial</li>
+                  <li data-en="Weekly follow-up and hands-on training">Suivi hebdomadaire et formation pratique</li>
+                  <li data-en="Capital progression by evidence">Progression du capital par preuve</li>
+                </ul>
+              </div>
+              <span class="offer-toggle" data-en="Learn more">En savoir plus</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="lab-section">
+        <div class="container">
+          <aside class="lab-panel lab-summary" aria-label="Résumé Microbusiness Lab">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker" data-en="Pilot program">Programme pilote</p>
+                <h2>Microbusiness Lab</h2>
+              </div>
+              <span data-en="18 months">18 mois</span>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <strong>250k</strong>
+                <p data-en="FCFA initial target ticket">FCFA ticket cible initial</p>
+              </div>
+              <div class="metric">
+                <strong>1M</strong>
+                <p data-en="FCFA capital target for top profiles">FCFA capital visé pour les meilleurs profils</p>
+              </div>
+              <div class="metric">
+                <strong>100</strong>
+                <p data-en="operational scoring points">points de scoring opérationnel</p>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <p data-en="indicator families tracked">familles d'indicateurs suivies</p>
+              </div>
+            </div>
+
+            <div class="doctrine">
+              <h3 data-en="Doctrine of action">Doctrine d'action</h3>
+              <p data-en="No funding without diagnosis. No increase without proof. No strategy without field data.">
+                Pas de financement sans diagnostic. Pas d'augmentation sans
+                preuve. Pas de stratégie sans données terrain.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div class="container split">
+          <div>
+            <p class="eyebrow gold">Doctrinoo Microbusiness Lab</p>
+            <h2 data-en="A lab that turns the informal economy into a measurable economic asset.">Un laboratoire pour transformer l'informel en actif économique mesurable.</h2>
+            <p class="section-text light" data-en="The Lab identifies real activities, measures their potential, supports management, gradually injects useful capital and documents growth trajectories.">
+              Le Lab identifie des activités réelles, mesure leur potentiel,
+              accompagne la gestion, injecte progressivement du capital utile et
+              documente les trajectoires de croissance.
+            </p>
+            <div class="tag-grid">
+              <span data-en="Field diagnostic">Diagnostic terrain</span>
+              <span data-en="Initial scoring">Scoring initial</span>
+              <span data-en="Weekly follow-up">Suivi hebdomadaire</span>
+              <span data-en="Evidence-based decisions">Décision par preuve</span>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-head">
+              <strong data-en="Progression scale">Grille de progression</strong>
+              <span>Capital</span>
+            </div>
+            <div class="progress-row">
+              <div><strong data-en="Preparation">Préparation</strong><span>0 FCFA</span></div>
+              <i data-width="12"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong data-en="Test ticket">Ticket test</strong><span>25k - 75k</span></div>
+              <i data-width="24"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong data-en="Growth">Croissance</strong><span>100k - 250k</span></div>
+              <i data-width="46"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong data-en="Acceleration">Accélération</strong><span>300k - 500k</span></div>
+              <i data-width="68"></i>
+            </div>
+            <div class="progress-row">
+              <div><strong data-en="Structuring capital">Capital structurant</strong><span>500k - 1M</span></div>
+              <i data-width="100"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="methode" class="section">
+        <div class="container split method-split">
+          <div>
+            <p class="eyebrow" data-en="Method">Méthode</p>
+            <h2 data-en="From field reality to leadership decisions.">De la réalité terrain à la décision de direction.</h2>
+          </div>
+          <div class="method-list">
+            <div><span>01</span><p data-en="Frame the need and constraints">Cadrer le besoin et les contraintes</p></div>
+            <div><span>02</span><p data-en="Observe the field and collect data">Observer le terrain et collecter les données</p></div>
+            <div><span>03</span><p data-en="Structure the economic models">Structurer les modèles économiques</p></div>
+            <div><span>04</span><p data-en="Score risks and opportunities">Scorer les risques et les opportunités</p></div>
+            <div><span>05</span><p data-en="Steer execution with indicators">Piloter l'exécution avec des indicateurs</p></div>
+            <div><span>06</span><p data-en="Measure results and prepare to scale">Mesurer les résultats et préparer l'échelle</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients-section">
+        <div class="container split">
+          <div class="client-card">
+            <p class="eyebrow">Clients</p>
+            <h2 data-en="For those who must decide with limited visibility.">Pour ceux qui doivent décider avec peu de visibilité.</h2>
+            <div class="chips">
+              <span data-en="Local SMEs">PME locales</span>
+              <span data-en="Public institutions">Institutions publiques</span>
+              <span data-en="NGOs and donors">ONG et bailleurs</span>
+              <span data-en="Impact funds">Fonds d'impact</span>
+              <span data-en="African diaspora">Diaspora africaine</span>
+              <span data-en="International companies">Entreprises internationales</span>
+            </div>
+          </div>
+
+          <div class="indicator-card">
+            <p class="eyebrow gold" data-en="Indicators">Indicateurs</p>
+            <h2 data-en="An economic reading driven by data.">Une lecture économique pilotée par la donnée.</h2>
+            <div class="indicator-grid">
+              <span data-en="margin">marge</span>
+              <span>stock</span>
+              <span data-en="cash flow">trésorerie</span>
+              <span data-en="risk">risque</span>
+              <span>impact</span>
+              <span data-en="growth">croissance</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-en="Typical engagements">Missions types</p>
+              <h2 data-en="Deliverables ready to decide, convince and execute.">Des livrables prêts pour décider, convaincre et exécuter.</h2>
+            </div>
+            <p data-en="Every engagement is designed to produce a useful decision, not a report that sits in a drawer.">
+              Chaque mission est pensée pour produire une décision utile, pas un
+              rapport qui dort dans un dossier.
+            </p>
+          </div>
+
+          <div class="mission-table">
+            <div>
+              <h3 data-en="Strategic diagnostic">Diagnostic stratégique</h3>
+              <p data-en="Executive brief, risk matrix, 90-day roadmap">Note dirigeant, matrice de risques, feuille de route 90 jours</p>
+            </div>
+            <div>
+              <h3 data-en="Market study">Étude de marché</h3>
+              <p data-en="Field report, stakeholder mapping, price and distribution analysis">Rapport terrain, cartographie acteurs, analyse prix et distribution</p>
+            </div>
+            <div>
+              <h3>Business plan</h3>
+              <p data-en="Financial model, pitch deck, investor or bank file">Modèle financier, pitch deck, dossier investisseur ou bancaire</p>
+            </div>
+            <div>
+              <h3 data-en="Monitoring &amp; evaluation">Suivi-évaluation</h3>
+              <p data-en="KPI framework, dashboard, impact report and recommendations">Référentiel KPI, dashboard, rapport d'impact et recommandations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-card">
+            <div>
+              <p class="eyebrow gold" data-en="Next step">Prochaine étape</p>
+              <h2 data-en="Scope a mission, test a market or structure a program.">Cadrer une mission, tester un marché ou structurer un programme.</h2>
+              <p data-en="A first scoping meeting clarifies the need, scope, deliverables and the right methodology.">
+                Une première réunion de cadrage permet de clarifier le besoin,
+                le périmètre, les livrables et la méthodologie adaptée.
+              </p>
+            </div>
+            <a href="mailto:contact@doctrinoo.com">contact@doctrinoo.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-en="© 2026 Doctrinoo Advisory. All rights reserved.">© 2026 Doctrinoo Advisory. Tous droits réservés.</p>
+        <p data-en="Advisory, data and economic development firm — Cameroon.">Cabinet de conseil, data et développement économique — Cameroun.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var css = document.createElement("style");
+        css.textContent =
+          "@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}" +
+          ".reveal-item{animation:fadeUp 700ms ease both}" +
+          ".reveal{opacity:0;transform:translateY(18px);transition:opacity 700ms ease,transform 700ms ease}" +
+          ".reveal.is-visible{opacity:1;transform:none}" +
+          ".offer-card,.button,.nav-cta,.chips span,.mission-table > div{transition:transform 220ms ease,border-color 220ms ease,background 220ms ease}" +
+          ".offer-card:hover{transform:translateY(-4px)}" +
+          ".button:hover,.nav-cta:hover{transform:translateY(-2px)}" +
+          ".mission-table > div:hover{background:rgba(23,60,44,0.04)}" +
+          ".progress-row i{transition:width 900ms cubic-bezier(.16,1,.3,1)}" +
+          ".offer-card{cursor:pointer}" +
+          ".offer-detail{max-height:0;overflow:hidden;transition:max-height 320ms ease,margin-top 320ms ease}" +
+          ".offer-detail ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.9}" +
+          ".offer-card.is-open .offer-detail{max-height:200px;margin-top:16px}" +
+          ".offer-toggle{display:inline-block;margin-top:16px;color:#7b6a3f;font-size:13px;font-weight:800;letter-spacing:0.04em}" +
+          ".offer-card.is-open .offer-toggle{display:none}";
+        document.head.appendChild(css);
+
+        document.querySelectorAll(".offer-card").forEach(function (card) {
+          function toggle() {
+            var open = card.classList.toggle("is-open");
+            card.setAttribute("aria-expanded", open ? "true" : "false");
+          }
+          card.addEventListener("click", toggle);
+          card.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+          });
+        });
+
+        var revealTargets = document.querySelectorAll(
+          ".proof-grid article, .offer-card, .progress-card, .lab-summary, .method-list > div, .client-card, .indicator-card, .mission-table > div, .contact-card"
+        );
+        revealTargets.forEach(function (el) { el.classList.add("reveal"); });
+
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                if (entry.target.classList.contains("progress-card")) {
+                  entry.target.querySelectorAll("i[data-width]").forEach(function (bar) {
+                    bar.style.width = bar.getAttribute("data-width") + "%";
+                  });
+                }
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        revealTargets.forEach(function (el) { io.observe(el); });
+      })();
+    </script>
+    <script>
+      (function () {
+        var CEMAC = ["cameroon", "gabon", "congo", "chad", "central african rep.", "central african republic", "eq. guinea", "equatorial guinea"];
+        function isCemac(name) {
+          var n = (name || "").toLowerCase().trim();
+          return CEMAC.indexOf(n) !== -1;
+        }
+        var container = document.getElementById("africa-map");
+        var width = container.clientWidth || 520;
+        var height = 560;
+        var svg = d3.select(container).append("svg").attr("viewBox", "0 0 " + width + " " + height).attr("width", "100%").attr("height", "100%");
+
+        d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json").then(function (topology) {
+          var countries = topojson.feature(topology, topology.objects.countries);
+          var africa = {
+            type: "FeatureCollection",
+            features: countries.features.filter(function (f) {
+              var c = d3.geoCentroid(f);
+              return c[0] >= -20 && c[0] <= 55 && c[1] >= -36 && c[1] <= 38;
+            })
+          };
+          var projection = d3.geoMercator().fitSize([width, height], africa);
+          var path = d3.geoPath(projection);
+
+          svg.selectAll("path")
+            .data(africa.features)
+            .join("path")
+            .attr("d", path)
+            .attr("fill", function (d) { return isCemac(d.properties.name) ? "#c99d43" : "rgba(255,255,255,0.9)"; })
+            .attr("stroke", "#173c2c")
+            .attr("stroke-width", 0.6);
+        });
+      })();
+    </script>
+    <script>
+      (function () {
+        var STORAGE_KEY = "doctrinoo-lang";
+        var nodes = document.querySelectorAll("[data-en]");
+        nodes.forEach(function (el) {
+          if (el.tagName === "META") { el.dataset.fr = el.getAttribute("content"); }
+          else { el.dataset.fr = el.innerHTML; }
+        });
+
+        function setLang(lang) {
+          document.documentElement.setAttribute("lang", lang);
+          nodes.forEach(function (el) {
+            if (el.tagName === "META") { el.setAttribute("content", lang === "en" ? el.getAttribute("data-en") : el.dataset.fr); }
+            else { el.innerHTML = lang === "en" ? el.getAttribute("data-en") : el.dataset.fr; }
+          });
+          document.querySelectorAll(".lang-btn").forEach(function (btn) {
+            btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
+          });
+          try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+        }
+
+        document.querySelectorAll(".lang-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () { setLang(btn.getAttribute("data-lang")); });
+        });
+
+        var saved;
+        try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+        if (saved === "en") { setLang("en"); }
+      })();
+    </script>
+  </body>
+</html>
